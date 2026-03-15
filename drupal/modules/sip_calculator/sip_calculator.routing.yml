@@ -1,0 +1,8 @@
+sip_calculator.main:
+  path: '/sip-calculator'
+  defaults:
+    _controller: '\Drupal\sip_calculator\Controller\SipCalculatorController::index'
+    _title: 'Goal-Based SIP Calculator'
+  requirements:
+    _access: 'TRUE'
+    

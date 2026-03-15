@@ -1,0 +1,10 @@
+sip_calculator:
+  version: '1.0.0'
+  css:
+    theme:
+      css/sip_calculator.css: {}
+  js:
+    js/sip_calculator.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery

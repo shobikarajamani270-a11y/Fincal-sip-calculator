@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * HDFC Mutual Fund — SIP Calculator Drupal Module.
+ *
+ * Drupal 10.5.6 compatible.
+ * PHP 8.1 compatible.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sip_calculator_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.sip_calculator':
+      return '<p>' . t('HDFC Mutual Fund Goal-Based SIP Calculator. For investor education and awareness only.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sip_calculator_theme() {
+  return [
+    'sip_calculator' => [
+      'variables' => [
+        'calculator_url' => NULL,
+        'title'          => NULL,
+      ],
+      'template' => 'sip-calculator',
+    ],
+  ];
+}
